@@ -55,6 +55,31 @@
     </div>
   </section>
 
+<section class="about-ai-vault animate-on-scroll">
+    <div class="vault-container">
+      <span class="golden-tag">Deep Intellect</span>
+      <h2>Inquire the Vault Records</h2>
+      <p>Unlock historical logs, master chef philosophies, or secrets of our aging chambers directly from the library's main digital terminal.</p>
+      
+      <div class="vault-terminal-box">
+        <div id="vaultResponse">
+          "The terminal sits silent. Select a scroll keyword or type your inquiry to awaken the Archivist's records..."
+        </div>
+        
+        <div class="vault-triggers-wrapper">
+          <button class="vault-keyword-btn" onclick="askVault('secrets')">[Secret of 1924]</button>
+          <button class="vault-keyword-btn" onclick="askVault('philosophy')">[The Cook's Authorship]</button>
+          <button class="vault-keyword-btn" onclick="askVault('humidity')">[Aging Chamber Physics]</button>
+        </div>
+
+        <div class="vault-input-row">
+          <input type="text" id="vaultInput" placeholder="Type a legacy keyword (e.g., origin, vault, master)..." onkeypress="handleVaultPress(event)">
+          <button class="vault-submit-btn" onclick="processVaultQuery()"><i class="fas fa-scroll"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="about-pillars">
     <h2 class="section-title">The Three Pillars</h2>
     <p class="section-subtitle">The foundation holding our dark luxury together</p>
