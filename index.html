@@ -165,6 +165,33 @@
     </div>
   </section>
 
+<div id="aiWidget" class="ai-widget-container" style="position: fixed; bottom: 35px; left: 35px; z-index: 2500;">
+    <button class="ai-widget-trigger" onclick="toggleAIWidget()">
+      <i class="fas fa-magic"></i> Ask The Archivist
+    </button>
+    
+    <div class="ai-chat-overlay-panel" id="aiChatPanel">
+      <div class="ai-panel-header-top">
+        <h3><i class="fas fa-bookmark"></i> The AI Archivist</h3>
+        <button class="ai-panel-close-x" onclick="toggleAIWidget()">&times;</button>
+      </div>
+      <div class="ai-panel-messages-body" id="aiChatBody">
+        <div class="ai-bubble system-bubble">
+          Greetings traveler of taste. I am the Archivist of Herritage Library. Shall I suggest a masterfully curated Chapter for your mood, or reveal our secret recipes?
+        </div>
+      </div>
+      <div class="ai-panel-suggestions-tags">
+        <button onclick="sendSuggestedQuery('Suggest something sweet')">Sweet Epilogue</button>
+        <button onclick="sendSuggestedQuery('What is Chapter III?')">Chapter III Secrets</button>
+        <button onclick="sendSuggestedQuery('Show premium steak')">Premium Cuts</button>
+      </div>
+      <div class="ai-panel-input-box">
+        <input type="text" id="aiUserInput" placeholder="Inquire about our culinary volumes..." onkeypress="handleAIPress(event)">
+        <button onclick="processAIQuery()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
   <footer class="main-footer animate-on-scroll">
     <div class="footer-container">
       <div class="footer-content">
