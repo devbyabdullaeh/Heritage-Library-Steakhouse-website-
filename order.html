@@ -148,6 +148,33 @@
     </div>
 </div>
 
+<div id="aiWidget" class="ai-widget-container">
+    <button class="ai-widget-trigger" onclick="toggleAIWidget()">
+      <i class="fas fa-magic"></i> Ask The Archivist
+    </button>
+    
+    <div class="ai-chat-overlay-panel" id="aiChatPanel">
+      <div class="ai-panel-header-top">
+        <h3><i class="fas fa-bookmark"></i> The AI Archivist</h3>
+        <button class="ai-panel-close-x" onclick="toggleAIWidget()">&times;</button>
+      </div>
+      <div class="ai-panel-messages-body" id="aiChatBody">
+        <div class="ai-bubble system-bubble">
+          Greetings. I am the Archivist of Herritage Library. Share your mood, flavor taste, or specific budget today, and I shall compile your perfect culinary story.
+        </div>
+      </div>
+      <div class="ai-panel-suggestions-tags">
+        <button onclick="sendSuggestedQuery('Recommend a luxurious steak pairing')">Premium Pairing</button>
+        <button onclick="sendSuggestedQuery('Coffee & dessert recommendation')">Sweet Epilogue</button>
+        <button onclick="sendSuggestedQuery('I have a budget around 15,000 PKR')">Budget Choice</button>
+      </div>
+      <div class="ai-panel-input-box">
+        <input type="text" id="aiUserInput" placeholder="Inquire item or budget preference..." onkeypress="handleAIPress(event)">
+        <button onclick="processAIQuery()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
 <footer class="main-footer animate-on-scroll">
     <div class="footer-container">
       <div class="footer-content">
