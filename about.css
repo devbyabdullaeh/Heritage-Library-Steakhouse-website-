@@ -1,31 +1,220 @@
-/* About Page Specific Styles */
-.about-page-main {
-    background: var(--bg-section);
-    padding: 100px 5%;
+/* ABOUT PAGE CUSTOM STYLING */
+.about-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('images/restaurent.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
 }
 
-.philosophy {
-    padding: 60px 5%;
+.about-hero h1 {
+  font-family: 'Georgia', serif;
+  color: var(--accent-gold);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-/* Reusing your existing .chapter classes for consistency */
-.philosophy .chapter {
-    background: transparent;
-    border: 1px solid rgba(197, 160, 89, 0.05);
+/* Philosophy Section */
+.about-philosophy {
+  background: var(--bg-section-soft);
 }
 
-/* Animation for the Header Text */
-.hero-content h1 {
-    animation: fadeInDown 1s ease;
+.philosophy-wrapper {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.phil-text {
+  flex: 1.3;
+}
+
+.golden-tag {
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.phil-text h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.phil-text p {
+  color: var(--text-muted);
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.phil-quote-box {
+  flex: 0.9;
+  background: rgba(197, 160, 89, 0.03);
+  border: 1px dashed rgba(197, 160, 89, 0.2);
+  padding: 40px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.phil-quote-box p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.phil-quote-box span {
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Pillars Section */
+.about-pillars {
+  background: var(--bg-section-alt);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pillar-card {
+  background: rgba(0,0,0,0.2);
+  padding: 40px 30px;
+  border: 1px solid rgba(197, 160, 89, 0.05);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.pillar-card:hover {
+  border-color: var(--accent-gold);
+  background: rgba(197, 160, 89, 0.02);
+  transform: translateY(-5px);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  color: var(--accent-gold);
+  margin-bottom: 20px;
+}
+
+.pillar-card h3 {
+  font-family: 'Georgia', serif;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.pillar-card p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* Timeline Custom Styles */
+.about-timeline {
+  background: var(--bg-dark);
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: rgba(197, 160, 89, 0.15);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-block {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-block::after {
+  content: ' ';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: -7px;
+  background-color: var(--bg-dark);
+  border: 2px solid var(--accent-gold);
+  top: 22px;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.item-left { left: 0; text-align: right; }
+.item-right { left: 50%; text-align: left; }
+
+.item-right::after { left: -5px; }
+
+.time-badge {
+  background: rgba(197, 160, 89, 0.1);
+  color: var(--accent-gold);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.time-content {
+  background: rgba(255,255,255,0.01);
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 4px;
+}
+
+.time-content h4 {
+  font-family: 'Georgia', serif;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.time-content p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Responsive Fixes */
+@media (max-width: 900px) {
+  .philosophy-wrapper { flex-direction: column; gap: 30px; }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .timeline-container::after { left: 31px; }
+  .timeline-block { width: 100%; padding-left: 70px; padding-right: 25px; text-align: left; }
+  .timeline-block::after { left: 25px; }
+  .item-right { left: 0; }
 }

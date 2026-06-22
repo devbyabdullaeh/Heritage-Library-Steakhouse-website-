@@ -1,90 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Herritage Library</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Herritage Library</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
 
-<nav class="navbar" id="mainNav">
+  <nav class="navbar scrolled">
     <a href="index.html" class="logo">HERRITAGE LIBRARY</a>
     <div class="nav-links" id="navLinks">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn" style="color: #C5A059;">Explore <i class="fas fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="about.html" style="color: #C5A059 !important;">About Us</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </li>
-            <li><a href="signin.html">Dashboard</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" style="color: #C5A059;">Explore <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="about.html" style="color: #C5A059 !important;">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </li>
+        <li><a href="signin.html">Dashboard</a></li>
+      </ul>
     </div>
     <img src="images/btn.png" alt="menu" class="menu-hamburger" onclick="toggleMenu()">
-</nav>
+  </nav>
 
-<header style="height: 60vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/restaurent.jpg');">
-  <div class="hero-content">
-    <h1 style="letter-spacing: 5px;">Our Heritage</h1>
-    <p>The Archive of Flavors</p>
-  </div>
-</header>
-
-<section class="about-page-main animate-on-scroll delay-100">
-    <div class="about-container">
-        <div class="about-img">
-            <img src="images/steakhouse.png" alt="Our Legacy" style="border: 1px solid var(--accent-gold); padding: 10px;">
-        </div>
-        <div class="about-text">
-            <h2 class="section-title" style="text-align: left;">The Story Behind The Library</h2>
-            <p>Founded in 2026, <strong>Herritage Library</strong> was born from a simple idea: food is more than just sustenance; it is a narrative. Just as a librarian preserves history, our chefs curate the finest ingredients to tell a story on every plate.</p>
-            <br>
-            <p class="history-text">"We don't just serve steaks; we serve chapters of a legacy that started generations ago in our family kitchen."</p>
-        </div>
+  <header class="about-hero">
+    <div class="hero-content animate-on-scroll">
+      <h1>The Legacy Archive</h1>
+      <p>Uncovering generations of culinary secrets and dark luxury</p>
     </div>
-</section>
+  </header>
 
-<section class="philosophy animate-on-scroll" style="background: var(--bg-section-alt);">
-    <div class="chapter-container">
-        <div class="chapter" style="text-align: center; align-items: center;">
-            <i class="fas fa-book-open" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
-            <h4>The Archives</h4>
-            <p class="history-text" style="border: none; text-align: center;">Over 50+ secret family recipes documented and perfected.</p>
-        </div>
-        <div class="chapter" style="text-align: center; align-items: center;">
-            <i class="fas fa-utensils" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
-            <h4>Master Chefs</h4>
-            <p class="history-text" style="border: none; text-align: center;">Our "Librarians" of the kitchen with 15+ years of craft.</p>
-        </div>
-        <div class="chapter" style="text-align: center; align-items: center;">
-            <i class="fas fa-wine-glass-alt" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
-            <h4>Atmosphere</h4>
-            <p class="history-text" style="border: none; text-align: center;">Designed for those who appreciate silence, luxury, and taste.</p>
-        </div>
-        <div class="chapter" style="text-align: center; align-items: center;">
-            <i class="fas fa-award" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
-            <h4>Quality</h4>
-            <p class="history-text" style="border: none; text-align: center;">Only AAA-grade meats and ethically sourced coffee beans.</p>
-        </div>
+  <section class="about-philosophy animate-on-scroll">
+    <div class="philosophy-wrapper">
+      <div class="phil-text">
+        <span class="golden-tag">The Grand Codex</span>
+        <h2>Where Culinary Art Meets Literary Soul</h2>
+        <p>Herritage Library isn’t merely a destination for gastronomy; it is a live archive where tastes are curated like ancient manuscripts. Founded on the principle that flavors possess historical patterns, we construct every dish as a sequential chapter[cite: 360].</p>
+        <p>From the precise 28-day molecular restructuring of our Dry-Aged cuts to the calculated roasting thresholds of Ethiopian heirloom beans, every recipe is an uncompromised testament to premium perfection[cite: 360, 361].</p>
+      </div>
+      <div class="phil-quote-box">
+        <p>"Cooking is not technicality; it is authorship. We do not design platters, we document culture."</p>
+        <span>— Head Archivist & Master Chef</span>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer class="main-footer animate-on-scroll">
+  <section class="about-pillars">
+    <h2 class="section-title">The Three Pillars</h2>
+    <p class="section-subtitle">The foundation holding our dark luxury together</p>
+    
+    <div class="pillars-grid">
+      <div class="pillar-card animate-on-scroll delay-100">
+        <div class="pillar-icon"><i class="fas fa-feather-alt"></i></div>
+        <h3>The Master Curation</h3>
+        <p>Every single spice extraction and vintage component on our menu undergoes meticulous vetting. If a flavor doesn't carry an ancestral story, it doesn't enter our vault[cite: 359].</p>
+      </div>
+
+      <div class="pillar-card animate-on-scroll delay-200">
+        <div class="pillar-icon"><i class="fas fa-university"></i></div>
+        <h3>Cinematic Aesthetics</h3>
+        <p>Our spatial layout is deliberately configured with deep mahogany textures, dimly lit vintage gold tones, and leather bindings to mirror high-society private libraries[cite: 369].</p>
+      </div>
+
+      <div class="pillar-card animate-on-scroll delay-300">
+        <div class="pillar-icon"><i class="fas fa-fire-alt"></i></div>
+        <h3>The Alchemist Fire</h3>
+        <p>We harness primal elementals—utilizing natural hickory wood-fire chambers and slow-temperature thermal reductions to preserve authentic ingredient profiles[cite: 364].</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-timeline animate-on-scroll">
+    <h2 class="section-title">Chronicles of Time</h2>
+    <div class="timeline-container">
+      
+      <div class="timeline-block item-left">
+        <div class="time-badge">1994</div>
+        <div class="time-content">
+          <h4>The First Manuscript</h4>
+          <p>The original blueprint of the legacy menu was drafted in a small personal underground cellar, documenting experimental wood-fire methods.</p>
+        </div>
+      </div>
+
+      <div class="timeline-block item-right">
+        <div class="time-badge">2012</div>
+        <div class="time-content">
+          <h4>The Vault Sealing</h4>
+          <p>Our 28-day signature dry-aging chamber algorithms were finalized, creating the revolutionary identity for what is now known as Chapter I[cite: 361].</p>
+        </div>
+      </div>
+
+      <div class="timeline-block item-left">
+        <div class="time-badge">2026</div>
+        <div class="time-content">
+          <h4>The Grand Inception</h4>
+          <p>Herritage Library officially unlocked its heavy mahogany doors to critics and true gastronomers, defining a new epoch of cinematic dining[cite: 369, 375].</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="main-footer animate-on-scroll">
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-section">
           <h2 class="footer-logo">HERRITAGE LIBRARY</h2>
-          <p>Premium Cafe & Steakhouse. Culinary excellence with a cinematic vibe.</p>
+          <p>Premium Cafe & Steakhouse. Culinary excellence with a cinematic vibe[cite: 86].</p>
         </div>
         <div class="footer-section footer-links">
           <h3>Quick Links</h3>
@@ -108,20 +140,17 @@
           <div class="social-icon-box">
             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 HERRITAGE LIBRARY | ALL RIGHTS RESERVED</p>
+        <p>&copy; 2026 HERRITAGE LIBRARY | ALL RIGHTS RESERVED [cite: 375]</p>
       </div>
     </div>
-</footer>
+  </footer>
 
-<button id="scrollToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="fas fa-chevron-up"></i></button>
-
-<script src="animations.js"></script>
-<script src="common.js"></script>
+  <script src="animations.js"></script>
+  <script src="common.js"></script>
 </body>
 </html>
